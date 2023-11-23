@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+     background-color: hsl(218, 28%, 13%);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding:20px 100px;
+    position: sticky;
+    top: 0;
+    background-color: hsl(218, 28%, 13%);
+
+}
+.link {
+    display: flex;
+    gap: 50px;
+}
+.link a {
+    color: hsl(0, 1%, 83%);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.link a:hover {
+    color: white;
+}
+.logo {
+    cursor: pointer;
+}
+.body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    text-align: center;
+    Font-size: 24px;
+}
+.body p {
+    color: hsl(0, 2%, 72%);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.start a {
+    background-color: aqua;
+    height: 50px;
+    width: 300px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.start a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+.flex {
+    display: flex;
+    gap: 100px;
+    margin-top: 200px;
+}
+.flex1 {
+    width: 400px;
+}
+.flex1 h4{
+    padding-bottom:-110px;
+}
+.body2 {
+    display: flex;
+    margin: 200px;
+    text-align: left;
+    align-items: center;
+    gap: 50px;
+}
+.see a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 15px;
+}
+.see{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid aqua;
+    width: 150px;
+    transition: 0.5s;
+}
+.see:hover {
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.body3 {
+    display: flex;
+    gap: 50px;
+    text-align: left;
+    padding: 10px 150px;
+
+}
+.grid {
+     background-color: hsl(218, 29%, 17%);
+     width: 100%;
+    padding: 20px;
+
+}
+.img img {
+    width: 50px;
+    border-radius: 100px;
+}
+.img {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+.img h5 {
+    margin-bottom: -30px;
+}
+.body4 {
+    background-color: hsl(218, 39%, 11%);
+    margin: 300px 300px;
+    margin-bottom: -120px;
+    padding: 70px 150px;
+}
+.forms {
+    margin-top: 30px;   
+
+}
+.footer {
+    background-color: hsl(220, 65%, 5%);
+    z-index: -1;
+    height: 500px;
+    padding: 200px 200px;
+
+}
+.foot {
+    margin-top: 20px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.location {
+    gap: 20px; 
+    color: white;
+    display: flex;
+    align-items: center;    
+}
+.locations {
+    gap: 20px; 
+    color: white;
+    display: flex;
+    align-items: center;    
+}
+.locationss {
+    gap: 20px; 
+    color: white;
+    display: flex;
+    align-items: center;    
+}
+.locationsss {
+    gap: 20px; 
+    color: white;
+    display: flex;
+    align-items: center;    
+}
+.foot a {
+    color: white;
+    text-decoration: none;
+}
+.foot a:hover {
+    border-bottom: 1px solid white;
+}
+@media screen and (min-width:1200px) {
+    .body {
+        width: max(100% - 20vw, 1400px);
+        margin-inline: auto;
+    }
+    .navbar {
+        width: min(100% - 20vw, 1200px);
+        margin-inline: auto;
+    }
+}
+@media screen and (max-width:900px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .body2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .body3 {
+        flex-direction: column;
+        display: flex;
+    }
+    .footer {
+        padding: 200px 15px ;
+        align-items: center;
+        justify-content: center;
+        display: flex; 
+        flex-wrap: wrap;
+        
+    }
+    .foot {
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .location {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .logo img {
+        width: 100px;
+    }
+    .link {
+        gap: 10px;
+        width: 100%;
+    }
+    .navbar {
+        padding: 10px;
+        width: 100%;
+        gap: 30%;
+    }
+    .flex1 {
+        width: 100%;
+    }
+    .him img {
+        width: 100%;
+    }
+    .body h1 {
+        font-size: 35px;
+    }
+    .body2 {
+        width: 100%;
+    }
+    .body3 {
+        padding: 10px 30px;
+        width: 100%;
+    }
+    .body4 {
+        padding: 70px 20px;
+        margin:auto;
+    margin-top: 400px;
+    width: 100%;
+    }
+    .foot {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer {
+        height: 50%;
+        width: 100%;
+    }
+}
