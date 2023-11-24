@@ -30,6 +30,69 @@ body {
 .logo {
     cursor: pointer;
 }
+.java {
+    display: none;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 0;
+    text-align: center;
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.overlay:hover {
+    color: aqua;
+}
+.close {
+ color: white; 
+ font-size: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+}
+.close:hover {
+    color: aqua;
+}
+.overlay a {
+    padding: 8px;
+    scroll-padding-top: -20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+.overlay a:hover , a:focus {
+    color: aqua;
+    border-bottom: 1px solid aqua;
+    width: inherit;
+    width: 110px;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+}
+.open a {
+    color: white;
+    text-decoration: none;
+}
+.open a:hover, a:active {
+    color: aqua;
+}
 .body {
     display: flex;
     justify-content: center;
@@ -223,10 +286,15 @@ body {
 @media screen and (max-width:500px) {
     .logo img {
         width: 100px;
+        margin-top: 10px;
+    }
+    .java {
+        display: block;
     }
     .link {
         gap: 10px;
         width: 100%;
+        display: none;
     }
     .navbar {
         padding: 10px;
